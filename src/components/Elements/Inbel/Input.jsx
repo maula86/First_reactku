@@ -6,7 +6,7 @@ const InputKu = (props) => {
             id={id}
             name={nameInput}
             placeholder={placeholder}
-            className="bg-[#f1f1f1] dark:bg-[#25313e] dark:text-white rounded w-72 py-2 px-3 placeholder:opacity-50" />
+            className="bg-[#f1f1f1] dark:bg-[#25313e] dark:text-white rounded w-full py-2 px-3 placeholder:opacity-50" />
     )
 }
 
