@@ -4,6 +4,9 @@ import Labelku from "../Elements/Inbel/Label";
 import InputKu from "../Elements/Inbel/input";
 
 const FormRegister = () => {
+  const HandleRegister = () => {
+    alert("Register Success");
+  }
   return (
     <div className="form-control w-full max-w-lg flex justify-center">
       <Labelku forku="name" textLabel="Name" />
@@ -35,10 +38,10 @@ const FormRegister = () => {
         placeholder="******"
       />
       
-      <Button textbtn="Register" />
-      <h2 className="mt-5 text-center text-slate-400 font-medium">Already have an account ? Click here to  
-        <Link className="text-blue-600" to="/loginPages"> Login</Link>
-      </h2>
+      <Button textbtn="Register" posisi="mt-8" onClick={HandleRegister}/>
+      {/* <h2 className="mt-5 text-center text-slate-400 font-medium">Already have an account ? Click here to  
+        <Link className="text-blue-600" to="/login"> Login</Link>
+      </h2> */}
     </div>
   );
 };

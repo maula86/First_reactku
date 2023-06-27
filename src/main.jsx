@@ -5,6 +5,8 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import LoginPages from './Pages/loginPages.jsx'
 import RegisterPages from './Pages/registerPages.jsx'
+import ProductPages from './Pages/productPages.jsx'
+import Counteran from './Pages/counteran.jsx'
 
 const router = createBrowserRouter([
   {
@@ -13,14 +15,22 @@ const router = createBrowserRouter([
     
   },
   {
-    path: '/loginPages',
+    path: '/login',
     element: <LoginPages />,
   
   },
   {
-    path: '/registerPages',
+    path: '/register',
     element: <RegisterPages />,
   
+  },
+  {
+    path: '/product',
+    element: <ProductPages />
+  },
+  {
+    path: '/counteran',
+    element: <Counteran />, 
   },
 ])
 
