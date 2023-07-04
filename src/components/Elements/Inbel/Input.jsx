@@ -1,5 +1,5 @@
 const InputKu = (props) => {
-    const {type = 'text', id = 'id', nameInput = 'nameInput', placeholder = 'Type here'} = props
+    const {type = 'text', id = 'id', nameInput = '', placeholder = 'Type here'} = props
     return (
         <input 
             type={type} 

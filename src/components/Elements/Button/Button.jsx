@@ -1,11 +1,12 @@
 const Button = (props) => {
   let stsbtn = false
-  const { textbtn = "click", lebar='w-20', posisi = '', disabled = stsbtn, onClick } = props;
+  const { textbtn = "click", tinggi='py-3', lebar='w-20', posisi = '', bgbtn = 'bg-blue-800', hvbgbtn = 'hover:shadow-blue-600/50 hover:bg-blue-600',  disabled = stsbtn, onClick, type = 'button' } = props;
   return (
     <button
-      className={`py-3 rounded ${lebar} font-semibold bg-blue-800 text-white hover:shadow-lg hover:shadow-blue-600/50 hover:bg-blue-600 hover:text-white ${posisi}`}
-      onClick={ () => onClick() }
+      className={`${tinggi} rounded ${lebar} font-semibold ${bgbtn} text-white hover:shadow-lg ${hvbgbtn} hover:text-white ${posisi}`}
+      onClick={onClick}
       disabled={disabled}
+      type={type}
     >
       {textbtn}
     </button>
